@@ -3,10 +3,10 @@ using System.Collections;
 
 public class movecloud : MonoBehaviour {
 	float high=0;
-
+	GameObject cat;
 	// Use this for initialization
 	void Start () {
-	
+		this.cat = GameObject.Find ("cat");
 	}
 	
 	// Update is called once per frame
@@ -21,5 +21,15 @@ public class movecloud : MonoBehaviour {
 				high = 0;
 		}
 
+	}
+	void OnCollisionEnter2D(Collision2D other){
+		if (other.gameObject.tag == "Player") {
+			cat.GetComponent<PlayerController> ().jump = true;
+		}
+	}
+	void OnCollisionExit2D(Collision2D other){
+		if (other.gameObject.tag == "Player") {
+			cat.GetComponent<PlayerController> ().jump = false;
+		}
 	}
 }

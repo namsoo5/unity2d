@@ -3,10 +3,12 @@ using System.Collections;
 
 public class wing : MonoBehaviour {
 	GameObject cat;
+	GameObject dropsound;
 	bool drop = true;
 	// Use this for initialization
 	void Start () {
 		this.cat = GameObject.Find ("cat");
+		this.dropsound = GameObject.Find ("itemdropsound");
 	}
 	
 	// Update is called once per frame
@@ -21,6 +23,7 @@ public class wing : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D other){
 		if (other.gameObject.tag == "Player") {
 			cat.GetComponent<PlayerController> ().getwing = true;
+			this.dropsound.GetComponent<dropsound> ().startmusic ();
 			gameObject.SetActive (false);
 		}
 

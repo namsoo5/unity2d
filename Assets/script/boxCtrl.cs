@@ -24,7 +24,6 @@ public class boxCtrl : MonoBehaviour {
 			this.animator.SetTrigger ("open");
 			item = Random.Range (1, 5);  //ramdom item drop select
 			itemselect.GetComponent<item>().items(this.item, boxpos);
-			Debug.Log (this.item);
 		}
 	}
 }

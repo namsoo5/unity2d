@@ -1,30 +1,31 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\boxCtrl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\PlayerController.cs">
     <Files>
+      <File FileName="Assets\script\change.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\brokecloud.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\dropsound.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\grayCtrl.cs" Line="1" Column="1" />
       <File FileName="Assets\script\arrowctrl.cs" Line="1" Column="1" />
       <File FileName="Assets\script\GameStart.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\grayCtrl.cs" Line="1" Column="1" />
       <File FileName="Assets\script\bomb.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\life.cs" Line="20" Column="56" />
+      <File FileName="Assets\script\life.cs" Line="1" Column="1" />
       <File FileName="Assets\item\graycloud.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\movecloud1.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\movecloud.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\lifeup.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\horimovecloud.cs" Line="28" Column="15" />
+      <File FileName="Assets\script\movecloud1.cs" Line="30" Column="22" />
+      <File FileName="Assets\script\movecloud.cs" Line="30" Column="22" />
+      <File FileName="Assets\script\PlayerController.cs" Line="120" Column="35" />
       <File FileName="Assets\script\limitzone.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\brokecloud.cs" Line="1" Column="1" />
       <File FileName="Assets\script\saveflag.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\horimovecloud.cs" Line="1" Column="1" />
       <File FileName="Assets\script\CameraController.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\railcloud.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\railcloud.cs" Line="21" Column="2" />
       <File FileName="Assets\script\trampoline.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\arrow.cs" Line="6" Column="18" />
-      <File FileName="Assets\script\ghostctrl.cs" Line="14" Column="2" />
-      <File FileName="Assets\script\item.cs" Line="14" Column="2" />
-      <File FileName="Assets\script\PlayerController.cs" Line="55" Column="43" />
-      <File FileName="Assets\script\wing.cs" Line="7" Column="32" />
-      <File FileName="Assets\change.cs" Line="15" Column="14" />
-      <File FileName="Assets\script\boxCtrl.cs" Line="23" Column="17" />
+      <File FileName="Assets\script\arrow.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\item.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\boxCtrl.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\ghostctrl.cs" Line="24" Column="3" />
+      <File FileName="Assets\script\lifeup.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\wing.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

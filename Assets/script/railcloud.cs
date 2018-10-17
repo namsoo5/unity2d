@@ -15,7 +15,7 @@ public class railcloud : MonoBehaviour {
 
 	void OnCollisionStay2D(Collision2D other){
 		if (other.gameObject.tag == "Player") {
-			this.player.transform.Translate (-0.05f, 0, 0);
+			this.player.transform.Translate (-0.04f, 0, 0);
 		}
 	}
 

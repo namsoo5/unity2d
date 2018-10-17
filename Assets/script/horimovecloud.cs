@@ -30,13 +30,19 @@ public class horimovecloud : MonoBehaviour {
 	}
 
 	void OnCollisionStay2D(Collision2D other){
-		if (other.gameObject.tag == "Player") {  //ghost item effect
+		if (other.gameObject.tag == "Player") {  //on cloud
 			move = true;
 		}
 	}
 	void OnCollisionExit2D(Collision2D other){
-		if (other.gameObject.tag == "Player") {  //ghost item effect
+		if (other.gameObject.tag == "Player") {  //out cloud
 			move = false;
+			player.GetComponent<PlayerController> ().jump = false;
+		}
+	}
+	void OnCollisionEnter2D(Collision2D other){
+		if (other.gameObject.tag == "Player") {
+			player.GetComponent<PlayerController> ().jump = true;
 		}
 	}
 }

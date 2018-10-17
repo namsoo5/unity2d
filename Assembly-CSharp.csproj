@@ -55,6 +55,7 @@
      <Compile Include="Assets\script\boxCtrl.cs" />
      <Compile Include="Assets\script\brokecloud.cs" />
      <Compile Include="Assets\script\change.cs" />
+     <Compile Include="Assets\script\dropsound.cs" />
      <Compile Include="Assets\script\ghostctrl.cs" />
      <Compile Include="Assets\script\grayCtrl.cs" />
      <Compile Include="Assets\script\horimovecloud.cs" />

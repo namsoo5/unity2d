@@ -5,9 +5,11 @@ using UnityEngine.UI;
 public class lifeup : MonoBehaviour {
 	bool drop = true;
 	GameObject life;
+	GameObject dropsound;
 	// Use this for initialization
 	void Start () {
 		this.life = GameObject.Find ("heart");
+		this.dropsound = GameObject.Find ("itemdropsound");
 	}
 	
 	// Update is called once per frame
@@ -21,6 +23,7 @@ public class lifeup : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D other){
 		if (other.gameObject.tag == "Player") {
 			life.GetComponent<life> ().heal ();
+			this.dropsound.GetComponent<dropsound> ().startmusic ();
 			gameObject.SetActive (false);
 		}
 
