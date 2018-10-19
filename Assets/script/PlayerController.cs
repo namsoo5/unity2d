@@ -19,7 +19,6 @@ public class PlayerController : MonoBehaviour {
 	public bool save = false;
 	public bool change = false;  //change item effect
 	float changecount = 0;
-	public bool jump=false;
 	// Use this for initialization
 	void Start () {
 		this.rigid2D = GetComponent<Rigidbody2D> ();
@@ -32,7 +31,7 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if(Input.GetKey(KeyCode.R))
+		if(Input.GetKey(KeyCode.R))  //checkpoint부터 체크하기 위한치트키생성
 			this.transform.position = new Vector3(4,33,0);
 
 
@@ -40,10 +39,9 @@ public class PlayerController : MonoBehaviour {
 		//visi = this.animator.GetBool ("Visible");   //좌우움직임을위한삭제
 		//float speedx = Mathf.Abs (this.rigid2D.velocity.x);  좌우움직임을위한 삭제 
 
-		if (Input.GetKeyDown (KeyCode.Space) && (jump || this.rigid2D.velocity.y ==0)) { //velocity는 가해지는 힘
+		if (Input.GetKeyDown (KeyCode.Space) && ( this.rigid2D.velocity.y ==0)) { //velocity는 가해지는 힘
 			this.animator.SetTrigger ("JumpTrigger");
 			this.rigid2D.AddForce (transform.up * this.jumpForce);
-			//jump = false;
 		}
 
 		//좌우이동

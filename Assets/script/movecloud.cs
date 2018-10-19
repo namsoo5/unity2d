@@ -2,7 +2,9 @@
 using System.Collections;
 
 public class movecloud : MonoBehaviour {
-	float high=0;
+	bool up = false;
+	bool down =false;
+	int num=0;
 	GameObject cat;
 	// Use this for initialization
 	void Start () {
@@ -11,25 +13,36 @@ public class movecloud : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		high += Time.deltaTime;
 
-		if (high < 3) {
-			this.transform.Translate (0, -0.02f, 0);
-		} else if (high >= 3) {
+		if (up && !down) {
 			this.transform.Translate (0, 0.02f, 0);
-			if (high > 6)
-				high = 0;
+			num++;
+			if (num > 100) {
+				up = false;
+			}
+		}
+		else if (down) {
+			up = false;
+			this.transform.Translate (0, -0.02f, 0);
+			num--;
+			if (num <= 0) {
+				down = false;
+			}
+				
 		}
 
 	}
 	void OnCollisionEnter2D(Collision2D other){
 		if (other.gameObject.tag == "Player") {
-			cat.GetComponent<PlayerController> ().jump = true;
+			up = true;
 		}
 	}
 	void OnCollisionExit2D(Collision2D other){
 		if (other.gameObject.tag == "Player") {
-			cat.GetComponent<PlayerController> ().jump = false;
+			down = true;
 		}
 	}
+
+
+
 }

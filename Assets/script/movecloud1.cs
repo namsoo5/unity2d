@@ -21,15 +21,4 @@ public class movecloud1 : MonoBehaviour {
 				high = 0;
 		}
 	}
-
-	void OnCollisionEnter2D(Collision2D other){
-		if (other.gameObject.tag == "Player") {
-			cat.GetComponent<PlayerController> ().jump = true;
-		}
-	}
-	void OnCollisionExit2D(Collision2D other){
-		if (other.gameObject.tag == "Player") {
-			cat.GetComponent<PlayerController> ().jump = false;
-		}
-	}
 }

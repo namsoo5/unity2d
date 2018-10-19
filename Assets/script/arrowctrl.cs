@@ -18,7 +18,7 @@ public class arrowctrl : MonoBehaviour {
 		if (time > 3) {
 			GameObject arrow = Instantiate (arrowPre) as GameObject;
 			int px = Random.Range (-3, 3);
-			arrow.transform.position = new Vector3 (px, 36, 0);
+			arrow.transform.position = new Vector3 (px, 38, 0);
 			time = 0;
 		}
 	}

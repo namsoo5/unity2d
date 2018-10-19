@@ -37,12 +37,7 @@ public class horimovecloud : MonoBehaviour {
 	void OnCollisionExit2D(Collision2D other){
 		if (other.gameObject.tag == "Player") {  //out cloud
 			move = false;
-			player.GetComponent<PlayerController> ().jump = false;
 		}
 	}
-	void OnCollisionEnter2D(Collision2D other){
-		if (other.gameObject.tag == "Player") {
-			player.GetComponent<PlayerController> ().jump = true;
-		}
-	}
+
 }
